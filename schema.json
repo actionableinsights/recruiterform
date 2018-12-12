@@ -1,0 +1,80 @@
+{
+    "title": "Skillset form",
+    
+    "type": "object",
+
+    "properties": {
+        "first_name": {
+            "title": "First Name",
+            "type": "string"
+        },
+
+        "last_name": {
+            "title": "Last Name",
+            "type": "string"
+        },
+
+        "mobile_phone_number": {
+            "title": "Mobile Phone Number",
+            "type": "string"
+        },
+
+        "email": {
+            "title": "Email",
+            "type": "string"
+        },
+        
+        "country": {
+            "title": "Country of Residence",
+            "type": "string"
+        },
+
+        "skillset": {
+            "items": {
+                "enum": [
+                    "Translate",
+                    "Review Translations",
+                    "Post-Edit Machine Translations"
+                ],
+                "type": "string"
+            },
+            "title": "[Skillset] I can:",
+            "type": "array"
+        },
+        
+        "translate_from": {
+			"$ref": "#/definitions/language_pair",
+            "title": "[Language Pair] I can translate from:"
+        },
+        "translate_to": {
+			"$ref": "#/definitions/language_pair",
+            "title": "[Language Pair] I can translate to:"
+        },
+
+        "word_count": {
+            "type": "string",
+            "title": "How many words can you translate daily?"
+        },
+        "cat_tools": {
+            "type": "string",
+            "title": "CAT Tools"
+        },
+        "proz_profile_url": {
+            "type": "string",
+            "title": "Profile URL"
+        },
+        "additional_info": {
+			"type": "string",
+			"title": "Additional info"
+		}
+    },
+
+	"definitions": {
+		"language_pair": {
+			"type": "array",
+			"enum": [
+				"Arabic","Albanian","Belarusian","Bulgarian","Cantonese","Chinese (Simplified)","Chinese (Traditional)","Croatian","Czech","Danish","Dutch","English (UK)","English (USA)","Estonian","Farsi","Finnish","French","Georgian","German","Greek","Gujarati","Hebrew","Hindi","Hungarian","Italian","Indonesian","Japanese","Korean","Lithuanian","Malay","Marathi","Norwegian","Polish","Portuguese (Brazil)","Portuguese (Portugal)","Punjabi","Romanian","Russian","Slovak","Somali","Spanish (European)","Spanish (Latin America)","Spanish (American Hispanic)","Swahili","Swedish","Tagalog","Thai","Turkish","Ukrainian","Urdu","Vietnamese"
+			]
+		}
+	}
+}
