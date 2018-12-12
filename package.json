@@ -4,11 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-	  "start": "node index.js"
+    "start": "node index.js"
   },
   "dependencies": {
+    "ajv": "^6.6.1",
     "alpaca": "^1.5.24",
     "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0"
   }

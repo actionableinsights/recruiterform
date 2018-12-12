@@ -75,13 +75,19 @@
 	"definitions": {
 		"cat_tools": {
 			"type": "array",
-			"enum": ["Tool1", "Tool2", "Tool3", "Tool4"]
+			"items": {
+				"type": "string",
+				"enum": ["Tool1", "Tool2", "Tool3", "Tool4"]
+			}
 		},
 		"language_pair": {
 			"type": "array",
-			"enum": [
+			"items": {
+				"type": "string",
+				"enum": [
 				"Arabic","Albanian","Belarusian","Bulgarian","Cantonese","Chinese (Simplified)","Chinese (Traditional)","Croatian","Czech","Danish","Dutch","English (UK)","English (USA)","Estonian","Farsi","Finnish","French","Georgian","German","Greek","Gujarati","Hebrew","Hindi","Hungarian","Italian","Indonesian","Japanese","Korean","Lithuanian","Malay","Marathi","Norwegian","Polish","Portuguese (Brazil)","Portuguese (Portugal)","Punjabi","Romanian","Russian","Slovak","Somali","Spanish (European)","Spanish (Latin America)","Spanish (American Hispanic)","Swahili","Swedish","Tagalog","Thai","Turkish","Ukrainian","Urdu","Vietnamese"
-			]
+				]
+			}
         }
 	}
 }

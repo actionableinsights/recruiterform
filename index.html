@@ -74,7 +74,7 @@
 				},
 				"form": {
 					"attributes": {
-						"action": "http://httpbin.org/post",
+						"action": "/submit",
 						"method": "post"
 					},
 					"buttons": {
@@ -86,7 +86,15 @@
 									this.focus();
 									return;
 								}
-								this.ajaxSubmit();
+								const data = this.getValue();
+								jQuery.ajax({
+									type: "POST",
+									url: "/submit", 
+									data: JSON.stringify(data), 
+									contentType: 'application/json',
+									dataType: 'json',
+									success: (r) => console.log('Response', r)
+								});
 							}
 						}
 					}
