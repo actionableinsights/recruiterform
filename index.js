@@ -4,6 +4,7 @@ const Koa = require('koa');
 const Router = require('koa-router');
 const Ajv = require('ajv');
 const bodyParser = require('koa-bodyparser');
+const {MongoClient} = require('mongodb');
 
 const app = new Koa();
 const ajv = new Ajv();
@@ -25,7 +26,23 @@ router.post('/submit', ctx => {
 	const input = Object.assign({}, ctx.request.body);
 	if (formSchema(input)) {
 		console.log('Input is valid, saving it', input);
-		ctx.response.status = 200;
+		MongoClient.connect(process.env.MONGODB_URI, (err, db) => {
+			if (err) {
+				console.log('Error connecting to mLab', err, process.env.MONGODB_URI);
+				throw err;
+			}
+
+			const dbo = db.db('heroku_947lsfwb');
+			dbo.collection('application').insertOne(input, (err, res) => {
+				if (err) {
+					console.log('Error inserting application', err);
+					throw err;
+				}
+				console.log('1 document inserted');
+				db.close();
+			});
+			ctx.response.status = 200;
+		});
 	} else {
 		console.log(formSchema.errors);
 		ctx.response.status = 401;
