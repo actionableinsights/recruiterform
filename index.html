@@ -30,46 +30,52 @@
 			</div>
 		</div>
 	<script type="text/javascript">
+		const multiselect = {
+			"type": "select",
+			"multiple": true,
+			"multiselect": {
+				"maxHeight": 300
+			},
+			"size": 5
+		};
+
 		$('#form1').alpaca({
 			"schemaSource": "/schema.json",
 			"options": {
 				"fields": {
+					"email": {
+						"helper": "This allows us to email you about translation"
+							+ " jobs that we may have available in your language pair"
+					},
+					"mobile_phone_number": {
+						"label": "Whatsapp",
+						"helper": "This allows us to contact you directly for"
+							+ " urgent translation projects"
+					},
 					"skillset": {
 						"type": "checkbox",
 						"label": "[Skillset] I can:"
 					},
-					"translate_from": {
-						"type": "select",
-						"multiple": true,
-						"multiselect": {
-							"maxHeight": 300
-						},
-						"size": 5
-					},
-					"translate_to": {
-						"type": "select",
-						"multiple": true,
-						"multiselect": {
-							"maxHeight": 300
-						},
-						"size": 5
-					},
+					"translate_from": multiselect,
+					"translate_to": multiselect,
 					"country": {
-						"type": "country"
+						"type": "country",
+						"helper": "This helps us comply with our clients'"
+							+ " requirements and any local privacy legislations."
 					},
-					"cat_tools": {
-						"type": "select",
-						"multiple": true,
-						"multiselect": {
-							"maxHeight": 300
-						},
-						"size": 5
+					"word_count": {
+						"helper": "This helps us understand your capacity when"
+							+ " assigning you jobs."
 					},
+					"cat_tools": multiselect,
 					"proz_profile_url": {
-						"type": "url"
+						"type": "url",
+						"helper": "This helps us evaluate your experience and"
+							+ " and prior feedback."
 					},
 					"additional_info": {
-						"type": "textarea"
+						"type": "textarea",
+						"label": "Additional info (optional)"
 					}
 				},
 				"form": {
