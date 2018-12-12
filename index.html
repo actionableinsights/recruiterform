@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Application Form</title>
 		<!-- dependencies (jquery, handlebars and bootstrap) -->
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
@@ -17,6 +18,14 @@
 	</head>
 	<body>
 		<div class="container">
+			<div>
+				<h1>Partner Applications</h1>
+
+				<p>To work with us as a Translator, Editor or Proofreader, we
+				need to know more about you and your skillset. Please fill in
+				the form below and submit you application. Thank you!
+				</p>
+			</div>
 			<div id="form1">
 			</div>
 		</div>
@@ -36,6 +45,50 @@
 							"maxHeight": 300
 						},
 						"size": 5
+					},
+					"translate_to": {
+						"type": "select",
+						"multiple": true,
+						"multiselect": {
+							"maxHeight": 300
+						},
+						"size": 5
+					},
+					"country": {
+						"type": "country"
+					},
+					"cat_tools": {
+						"type": "select",
+						"multiple": true,
+						"multiselect": {
+							"maxHeight": 300
+						},
+						"size": 5
+					},
+					"proz_profile_url": {
+						"type": "url"
+					},
+					"additional_info": {
+						"type": "textarea"
+					}
+				},
+				"form": {
+					"attributes": {
+						"action": "http://httpbin.org/post",
+						"method": "post"
+					},
+					"buttons": {
+						"submit": {
+							"title": "Submit Form",
+							"click": function() {
+								this.refreshValidationState(true);
+								if (!this.isValid(true)) {
+									this.focus();
+									return;
+								}
+								this.ajaxSubmit();
+							}
+						}
 					}
 				}
 			}

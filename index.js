@@ -11,7 +11,7 @@ app.use(require('koa-static')(path.join(__dirname, '/public')));
 const router = new Router();
 
 router.get('/', ctx => {
-	const indexHTML = fs.readFileSync(path.join(__dirname, '/public/index.html'), 'utf-8');
+	const indexHTML = fs.readFileSync(path.join(__dirname, '/index.html'), 'utf-8');
 	ctx.body = indexHTML;
 });
 
