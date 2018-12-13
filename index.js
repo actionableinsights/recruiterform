@@ -22,27 +22,15 @@ router.get('/', ctx => {
 	ctx.body = indexHTML;
 });
 
-router.post('/submit', ctx => {
+router.post('/submit', async (ctx) => {
 	const input = Object.assign({}, ctx.request.body);
 	if (formSchema(input)) {
-		console.log('Input is valid, saving it', input);
-		MongoClient.connect(process.env.MONGODB_URI, (err, db) => {
-			if (err) {
-				console.log('Error connecting to mLab', err, process.env.MONGODB_URI);
-				throw err;
-			}
-
-			const dbo = db.db('heroku_947lsfwb');
-			dbo.collection('application').insertOne(input, (err, res) => {
-				if (err) {
-					console.log('Error inserting application', err);
-					throw err;
-				}
-				console.log('1 document inserted');
-				db.close();
-			});
-			ctx.response.status = 200;
-		});
+		let client = await MongoClient.connect(process.env.MONGODB_URI, {useNewUrlParser: true});
+		let db = await client.db();
+		await db.collection('application').insertOne(input);
+		client.close();
+		ctx.response.status = 200;
+		ctx.response.body = {status: '1 document inserted'};
 	} else {
 		console.log(formSchema.errors);
 		ctx.response.status = 401;
