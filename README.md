@@ -19,7 +19,7 @@ App is started by running `npm start` script.
 App requires two environment variables to be set:
 
   - PORT  The port number server will listen to (default: 4000)
-  - MONGODBB_URI  URI to MongoDB to save form to
+  - MONGODB_URI  URI to MongoDB to save form to
 
 When deploying to Heroku with mLab add-on, both variables are set by Heroku.
 
