@@ -22,11 +22,11 @@ router.get('/', ctx => {
 	ctx.body = indexHTML;
 });
 
-router.post('/submit', async (ctx) => {
+router.post('/submit', async ctx => {
 	const input = Object.assign({}, ctx.request.body);
 	if (formSchema(input)) {
-		let client = await MongoClient.connect(process.env.MONGODB_URI, {useNewUrlParser: true});
-		let db = await client.db();
+		const client = await MongoClient.connect(process.env.MONGODB_URI, {useNewUrlParser: true});
+		const db = await client.db();
 		await db.collection('application').insertOne(input);
 		client.close();
 		ctx.response.status = 200;
