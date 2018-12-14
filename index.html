@@ -292,6 +292,23 @@ This agreement may be executed in any number of counterparts, each of which, whe
 			</div>
 		</div>
 	<script type="text/javascript">
+		const labels = {
+			"first_name": "First Name",
+			"last_name": "Last Name",
+			"mobile_phone_number": "Whatsapp",
+			"email": "Email",
+			"country": "Country of Residence",
+			"skillset": "[Skillset] I can:",
+			"translate_from": "[Language Pair] I can translate from:",
+			"translate_to": "[Language Pair] I can translate to:",
+			"word_count": "How many words can you translate daily?",
+			"cat_tools": "CAT Tools",
+			"proz_profile_url": "ProZ Profile URL",
+			"additional_info": "Additional info (optional)",
+			"terms": "Partner Terms of Engagement",
+			"terms_accepted": "I accept the Partner Terms of Engagement"
+		};
+
 		const multiselect = {
 			"type": "select",
 			"multiple": true,
@@ -308,50 +325,66 @@ This agreement may be executed in any number of counterparts, each of which, whe
 			},
 			"options": {
 				"fields": {
+					"first_name": {
+						"label": labels["first_name"]
+					},
+					"last_name": {
+						"label": labels["last_name"]
+					},
 					"email": {
+						"label": labels["email"],
 						"helper": "This allows us to email you about translation"
 							+ " jobs that we may have available in your language pair"
 					},
 					"mobile_phone_number": {
-						"label": "Whatsapp",
+						"label": labels["mobile_phone_number"],
 						"helper": "This allows us to contact you directly for"
 							+ " urgent translation projects"
 					},
 					"skillset": {
 						"type": "checkbox",
-						"label": "[Skillset] I can:"
+						"label": labels["skillset"]
 					},
-					"translate_from": multiselect,
-					"translate_to": multiselect,
+					"translate_from": Object.assign({
+						"label": labels["translate_form"]
+					}, multiselect),
+					"translate_to": Object.assign({
+						"label": labels["translate_to"]
+					}, multiselect),
 					"country": {
 						"type": "country",
+						"label": labels["country"],
 						"helper": "This helps us comply with our clients'"
 							+ " requirements and any local privacy legislations."
 					},
 					"word_count": {
+						"label": labels["word_count"],
 						"helper": "This helps us understand your capacity when"
 							+ " assigning you jobs."
 					},
-					"cat_tools": multiselect,
+					"cat_tools": Object.assign({
+						"label": labels["cat_tools"]
+					}, multiselect),
 					"proz_profile_url": {
 						"type": "url",
+						"label": labels["proz_profile_url"],
 						"helper": "This helps us evaluate your experience and"
 							+ " and prior feedback."
 					},
 					"additional_info": {
 						"type": "textarea",
-						"label": "Additional info (optional)"
+						"label": labels["additional_info"]
 					},
 					"terms": {
 						"type": "textarea",
-						"label": "Partner Terms of Engagement",
+						"label": labels["terms"],
 						"readonly": true,
 						"rows": 10
 					},
 					"terms_accepted": {
 						"type": "checkbox",
-						"label": " ",
-						"rightLabel": "I accept the Partner Terms of Engagement"
+						"rightLabel": labels["terms_accepted"],
+						"label": " "
 					}
 				},
 				"form": {
