@@ -66,6 +66,14 @@
         "additional_info": {
 			"type": "string",
 			"title": "Additional info"
+		},
+		"terms": {
+			"type": "string",
+			"title": "Partner Terms of Engagement"
+		},
+		"terms_accepted": {
+			"type": "boolean",
+			"title": "Acceptance of Terms of Engagement"
 		}
     },
 	"required": [
