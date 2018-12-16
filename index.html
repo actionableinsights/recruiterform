@@ -21,10 +21,15 @@
 			<div>
 				<h1>Partner Applications</h1>
 
-				<p>To work with us as a Translator, Editor or Proofreader, we
+				<p class="intro en">To work with us as a Translator, Editor or Proofreader, we
 				need to know more about you and your skillset. Please fill in
 				the form below and submit you application. Thank you!
 				</p>
+			</div>
+			<div class="thank-you en hidden">
+				<h2>Thank you for your application!</h2>
+
+				<p>Your application was submitted, we will contact you shortly.</p>
 			</div>
 			<div id="form1">
 				<div class="terms en hidden">
@@ -408,7 +413,10 @@ This agreement may be executed in any number of counterparts, each of which, whe
 									data: JSON.stringify(data), 
 									contentType: 'application/json',
 									dataType: 'json',
-									success: (r) => console.log('Response', r)
+									success: r => {
+										$('#form1').html($('.thank-you.en').html());
+										$('.intro').hide();
+									}
 								});
 							}
 						}
