@@ -1,3 +1,11 @@
+# to do
+
+1. Display default data for word_count and whatsapp fields
+2. Rewrite terms and translate 
+3. Allow users to select language for interface and terms
+4. Language pair to and from must not be the same
+
+
 # Simple Form
 
 ## Description
