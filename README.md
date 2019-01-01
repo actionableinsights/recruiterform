@@ -1,9 +1,12 @@
 # to do
 
-1. Display default data for word_count and whatsapp fields
-2. Rewrite terms and translate 
-3. Allow users to select language for interface and terms
-4. Language pair to and from must not be the same
+0. fields are multiselect when Residence and From/TO language single select
+1. Users can choose more than one From/To language pairs
+2. Display default data for word_count and whatsapp fields
+3. Rewrite terms and translate 
+4. Allow users to select language for interface and terms
+
+~~5. Language pair to and from must not be the same > uses validation~~
 
 
 # Simple Form

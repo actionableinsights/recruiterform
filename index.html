@@ -31,6 +31,7 @@
         </div>
         <div id="form1">
             <div class="terms en hidden">
+
                 Partner Terms of Engagement PLEASE NOTE THAT BY PROVIDING SERVICES (AS DEFINED BELOW) TO THE COMPANY YOU WILL AUTOMATICALLY BE DEEMED TO HAVE ACCEPTED AND BE BOUND BY THE TERMS OF THIS AGREEMENT IN ITS ENTIRETY. IF YOU DO NOT AGREE TO ANY PROVISIONS IN
                 THIS AGREEMENT, PLEASE DO NOT PROVIDE ANY SERVICES TO THE COMPANY. PARTIES (1) BDXL LTD, trading as ‘Translayte’ incorporated and registered in England and Wales with Company number 7496682 whose registered office is at 20 – 22 Wenlock
                 St. London. United Kingdom. N1 7GU (Company); and (2) Contractor engaged in a contract for services with BDXL Ltd (together the “Parties” and each a “Party“). WHEREAS: (1) The Company provides translation, writing and editing services
@@ -219,7 +220,6 @@
             "terms": "Partner Terms of Engagement",
             "terms_accepted": "I accept the Partner Terms of Engagement"
         };
-
         const multiselect = {
             "type": "select",
             "multiple": true,
@@ -229,8 +229,18 @@
             "size": 5
         };
 
+        const theselect = {
+            "type": "select",
+            "multiple": false,
+            "size": 3
+        };
+
+
         $('#form1').alpaca({
             "schemaSource": "/schema.json",
+            "view": {
+                "locale": "en_EN"
+            },
             "data": {
                 "terms": $('.terms.en').html()
             },
@@ -258,11 +268,30 @@
                         "label": labels["skillset"]
                     },
                     "translate_from": Object.assign({
-                        "label": labels["translate_form"]
-                    }, multiselect),
+                        "label": labels["translate_form"],
+                        "type": "select",
+                        "data": "translate_from"
+
+                    }, theselect),
                     "translate_to": Object.assign({
-                        "label": labels["translate_to"]
-                    }, multiselect),
+                        "label": labels["translate_to"],
+
+                        "validator": function(callback) {
+                            var value = this.getValue();
+                            var translatefrom = this.getParent().childrenByPropertyId["translate_from"].getValue();
+                            if (value.toString() == translatefrom.toString()) {
+                                callback({
+                                    "status": false,
+                                    "message": "Please select a different language for the target language"
+                                });
+                            } else {
+                                callback({
+                                    "status": true
+                                });
+                            }
+
+                        }
+                    }, theselect),
                     "country": {
                         "type": "select",
                         "label": labels["country"],

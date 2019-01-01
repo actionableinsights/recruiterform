@@ -51,11 +51,11 @@
 
         "translate_from": {
             "$ref": "#/definitions/language_pair",
-            "title": "[Language Pair] I can translate from:"
+            "title": "[Language Pair] I translate from:"
         },
         "translate_to": {
             "$ref": "#/definitions/language_pair",
-            "title": "[Language Pair] I can translate to:"
+            "title": "[Language Pair] I translate to:"
         },
 
         "word_count": {
