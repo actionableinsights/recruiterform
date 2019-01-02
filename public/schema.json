@@ -1,189 +1,191 @@
 {
-  "title": "Skillset form",
+    "title": "Skillset form",
 
-  "type": "object",
+    "type": "object",
 
-  "properties": {
-    "first_name": {
-      "title": "First Name",
-      "type": "string"
-    },
+    "properties": {
+        "first_name": {
+            "title": "First Name",
+            "type": "string"
+        },
 
-    "last_name": {
-      "title": "Last Name",
-      "type": "string"
-    },
+        "last_name": {
+            "title": "Last Name",
+            "type": "string"
+        },
 
-    "mobile_phone_number": {
-      "title": "Whatsapp",
-      "options": {
-        "data": "+447981555555"
-      },
-      "type": "string"
-    },
+        "mobile_phone_number": {
+            "title": "Whatsapp",
+            "options": {
+                "data": "+447981555555"
+            },
+            "type": "string"
+        },
 
-    "email": {
-      "title": "Email",
-      "type": "string"
-    },
+        "email": {
+            "title": "Email",
+            "type": "string"
+        },
 
-    "country": {
-      "title": "Country of Residence",
-      "options": {
-        "capitalize": true,
-        "hideNone": true,
-        "multiple": false
-      },
-      "enum": [
-        "Albania",
-        "Andorra",
-        "Armenia",
-        "Austria",
-        "Azerbaijan",
-        "Belarus",
-        "Belgium",
-        "Bosnia and Herzegovina",
-        "Bulgaria",
-        "Croatia",
-        "Cyprus",
-        "Czech Republic",
-        "Denmark",
-        "Estonia",
-        "Finland",
-        "France",
-        "Georgia",
-        "Germany",
-        "Greece",
-        "Hungary",
-        "Iceland",
-        "Ireland",
-        "Italy",
-        "Kosovo",
-        "Latvia",
-        "Liechtenstein",
-        "Lithuania",
-        "Luxembourg",
-        "Macedonia",
-        "Malta",
-        "Moldova",
-        "Monaco",
-        "Montenegro",
-        "The Netherlands",
-        "Norway",
-        "Poland",
-        "Portugal",
-        "Romania",
-        "Russia",
-        "San Marino",
-        "Serbia",
-        "Slovakia",
-        "Slovenia",
-        "Spain",
-        "Sweden",
-        "Switzerland",
-        "Turkey",
-        "Ukraine",
-        "United Kingdom",
-        "Vatican City"
-      ]
-    },
+        "country": {
+            "title": "Country of Residence",
+            "options": {
+                "capitalize": true,
+                "hideNone": true,
+                "multiple": false
+            },
+            "enum": [
+                "Albania",
+                "Andorra",
+                "Armenia",
+                "Austria",
+                "Azerbaijan",
+                "Belarus",
+                "Belgium",
+                "Bosnia and Herzegovina",
+                "Bulgaria",
+                "Croatia",
+                "Cyprus",
+                "Czech Republic",
+                "Denmark",
+                "Estonia",
+                "Finland",
+                "France",
+                "Georgia",
+                "Germany",
+                "Greece",
+                "Hungary",
+                "Iceland",
+                "Ireland",
+                "Italy",
+                "Kosovo",
+                "Latvia",
+                "Liechtenstein",
+                "Lithuania",
+                "Luxembourg",
+                "Macedonia",
+                "Malta",
+                "Moldova",
+                "Monaco",
+                "Montenegro",
+                "The Netherlands",
+                "Norway",
+                "Poland",
+                "Portugal",
+                "Romania",
+                "Russia",
+                "San Marino",
+                "Serbia",
+                "Slovakia",
+                "Slovenia",
+                "Spain",
+                "Sweden",
+                "Switzerland",
+                "Turkey",
+                "Ukraine",
+                "United Kingdom",
+                "Vatican City"
+            ]
+        },
 
-    "skillset": {
-      "items": {
-        "enum": [
-          "Translate",
-          "Bilingual Review Translations",
-          "Post-Edit Machine Translations"
-        ],
-        "type": "string"
-      },
-      "title": "[Skillset] I can:",
-      "type": "array"
-    },
+        "skillset": {
+            "items": {
+                "enum": [
+                    "Translate",
+                    "Bilingual Review Translations",
+                    "Post-Edit Machine Translations"
+                ],
+                "type": "string"
+            },
+            "title": "[Skillset] I can:",
+            "type": "array"
+        },
 
-    "translate_from": {
-      "title": "[Language Pair] I translate from:",
-      "options": {
-        "multiple": false
-      },
-      "enum": [
-        "Dutch",
-        "English (UK)",
-        "French (FR)",
-        "German (DE/AT)",
-        "Italian",
-        "Polish",
-        "Portuguese (PT)",
-        "Russian (RT/UKR)",
-        "Spanish (ES)"
-      ]
-    },
-    "translate_to": {
-      "title": "[Language Pair] I translate to:",
-      "options": {
-        "multiple": false
-      },
-      "enum": [
-        "Dutch",
-        "English (UK)",
-        "French (FR)",
-        "German (DE/AT)",
-        "Italian",
-        "Polish",
-        "Portuguese (PT)",
-        "Russian (RT/UKR)",
-        "Spanish (ES)"
-      ]
-    },
+        "translate_from": {
+            "title": "[Language Pair] I translate from:",
+            "options": {
+                "multiple": false
 
-    "word_count": {
-      "type": "number",
-      "title": "How many words can you translate daily?",
-      "options": {
-        "minimum": 1000,
-        "maximum": 5000,
-        "divisibleBy": 1000
-      }
+            },
+            "enum": [
+                "Dutch",
+                "English (UK)",
+                "French (FR)",
+                "German (DE/AT)",
+                "Italian",
+                "Polish",
+                "Portuguese (PT)",
+                "Russian (RT/UKR)",
+                "Spanish (ES)"
+            ]
+        },
+        "translate_to": {
+            "title": "[Language Pair] I translate to:",
+            "options": {
+                "multiple": false
+
+            },
+            "enum": [
+                "Dutch",
+                "English (UK)",
+                "French (FR)",
+                "German (DE/AT)",
+                "Italian",
+                "Polish",
+                "Portuguese (PT)",
+                "Russian (RT/UKR)",
+                "Spanish (ES)"
+            ]
+        },
+
+        "word_count": {
+            "type": "number",
+            "title": "How many words can you translate daily?",
+            "options": {
+                "minimum": 1000,
+                "maximum": 5000,
+                "divisibleBy": 1000
+            }
+        },
+        "cat_tools": {
+            "title": "CAT Tools",
+            "$ref": "#/definitions/cat_tools"
+        },
+        "proz_profile_url": {
+            "type": "string",
+            "title": "Profile URL"
+        },
+        "additional_info": {
+            "type": "string",
+            "title": "Additional info"
+        },
+        "terms": {
+            "type": "string",
+            "title": "Partner Terms of Engagement"
+        },
+        "terms_accepted": {
+            "type": "boolean",
+            "title": "Acceptance of Terms of Engagement"
+        }
     },
-    "cat_tools": {
-      "title": "CAT Tools",
-      "$ref": "#/definitions/cat_tools"
-    },
-    "proz_profile_url": {
-      "type": "string",
-      "title": "Profile URL"
-    },
-    "additional_info": {
-      "type": "string",
-      "title": "Additional info"
-    },
-    "terms": {
-      "type": "string",
-      "title": "Partner Terms of Engagement"
-    },
-    "terms_accepted": {
-      "type": "boolean",
-      "title": "Acceptance of Terms of Engagement"
+    "required": [
+        "first_name",
+        "last_name",
+        "email",
+        "terms_accepted",
+        "country",
+        "skillset",
+        "translate_from",
+        "translate_to",
+        "proz_profile_url"
+    ],
+    "definitions": {
+        "cat_tools": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": ["SDL Trados Studio", "MemoQ 8.x", "Transit NXT ", "Across 6"]
+            }
+        }
     }
-  },
-  "required": [
-    "first_name",
-    "last_name",
-    "email",
-    "terms_accepted",
-    "country",
-    "skillset",
-    "translate_from",
-    "translate_to",
-    "proz_profile_url"
-  ],
-  "definitions": {
-    "cat_tools": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": ["SDL Trados Studio", "MemoQ 8.x", "Transit NXT ", "Across 6"]
-      }
-    }
-  }
 }
