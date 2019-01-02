@@ -679,7 +679,7 @@
         $("#form1").alpaca({
           schema: schema,
           view: {
-            locale: "en_US"
+            locale: getLocale()
           },
           data: {
             terms: $(".terms.en").html()
@@ -824,6 +824,15 @@
 
       function changeLanguage() {
         init($("#lang").val());
+      }
+
+      function getLocale() {
+        switch ($("#lang").val()) {
+          case "de":
+            return "de_DE";
+          default:
+            return "en_US";
+        }
       }
     </script>
   </body>
