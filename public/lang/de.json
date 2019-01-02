@@ -1,147 +1,145 @@
 {
-  "main_title": "DE-Partner Applications",
-  "main_intro": "DE-To work with us as a Translator, Editor or Proofreader, we need to know more about you and your skillset. Please fill in the form below and submit you application. Thank you!",
-  "submitted_title": "DE-Thank you for your application!",
-  "submitted_info": "DE-Your application was submitted. We will contact you shortly.",
-  "please_select_different_language": "DE-Please select a different language for the target language",
-  "title": "DE-Skillset form",
-  "first_name": {
-    "title": "DE-First Name"
-  },
-  "last_name": {
-    "title": "DE-Last Name"
-  },
-  "mobile_phone_number": {
-    "title": "DE-Whatsapp",
-    "helper": "DE-This allows us to contact you directly for urgent translation projects"
-  },
-
-  "email": {
-    "title": "DE-Email",
-    "helper": "DE-This allows us to email you about translation jobs that we may have available in your language pair"
-  },
-  "country": {
-    "title": "DE-Country of Residence"
-  },
-  "skillset": {
-    "items": {
-      "enum": [
-        "DE - Translate",
-        "DE - Bilingual Review Translations",
-        "DE - Post-Edit Machine Translations"
-      ]
+    "main_title": "Bewerben Sie sich als Partner",
+    "main_intro": "Bevor Sie mit uns als Übersetzer oder Reviewer arbeiten, wir müssen mehr von Ihnen und ihr Kenntnisse erfahren.Füllen Sie bitte das folgende Formular. Vielen Dank!",
+    "submitted_title": "Vielen Dank für Ihre Bewerbung!",
+    "submitted_info": "Ihre Bewerbung haben wir erhalten. Wir werden bald in Kontakt mit Ihnen sein.",
+    "please_select_different_language": "Quell- und Zielsprache müssen verschieden sein",
+    "title": "Ihre Kenntnisse",
+    "first_name": {
+        "title": "Vorname"
     },
-    "title": "DE-[Skillset] I can:"
-  },
-  "translate_from": {
-    "title": "DE-[Language Pair] I translate from:"
-  },
-  "translate_to": {
-    "title": "DE-[Language Pair] I translate to:"
-  },
-  "word_count": {
-    "title": "DE-How many words can you translate daily?",
-    "helper": "DE-This helps us understand your capacity when assigning you jobs."
-  },
-  "cat_tools": {
-    "title": "DE-CAT Tools"
-  },
-  "proz_profile_url": {
-    "title": "DE-Profile URL",
-    "helper": "DE-This helps us evaluate your experience and and prior feedback."
-  },
-  "additional_info": {
-    "title": "DE-Additional info"
-  },
-  "terms": {
-    "title": "DE-Partner Terms of Engagement"
-  },
-  "terms_accepted": {
-    "title": "DE-Partner Terms of Engagement",
-    "rightLabel": "DE-I accept the Partner Terms of Engagement"
-  },
-  "definitions": {
-    "cat_tools": {
-      "items": {
-        "enum": [
-          "DE - SDL Trados Studio",
-          "DE - MemoQ 8.x",
-          "DE - Transit NXT ",
-          "DE - Across 6"
-        ]
-      }
+    "last_name": {
+        "title": "Nachname"
+    },
+    "mobile_phone_number": {
+        "title": "Whatsapp Telefonnummer",
+        "helper": "Bei dringenden Angelegenheiten"
+    },
+
+    "email": {
+        "title": "DE-Email",
+        "helper": "DE-This allows us to email you about translation jobs that we may have available in your language pair"
     },
     "country": {
-      "helper": "DE-This helps us comply with our clients' requirements and any local privacy legislations.",
-      "items": {
-        "enum": [
-          "DE - Albania",
-          "Andorra",
-          "Armenia",
-          "Austria",
-          "Azerbaijan",
-          "Belarus",
-          "Belgium",
-          "Bosnia and Herzegovina",
-          "Bulgaria",
-          "Croatia",
-          "Cyprus",
-          "Czech Republic",
-          "Denmark",
-          "Estonia",
-          "Finland",
-          "France",
-          "Georgia",
-          "Germany",
-          "Greece",
-          "Hungary",
-          "Iceland",
-          "Ireland",
-          "Italy",
-          "Kosovo",
-          "Latvia",
-          "Liechtenstein",
-          "Lithuania",
-          "Luxembourg",
-          "Macedonia",
-          "Malta",
-          "Moldova",
-          "Monaco",
-          "Montenegro",
-          "The Netherlands",
-          "Norway",
-          "Poland",
-          "Portugal",
-          "Romania",
-          "Russia",
-          "San Marino",
-          "Serbia",
-          "Slovakia",
-          "Slovenia",
-          "Spain",
-          "Sweden",
-          "Switzerland",
-          "Turkey",
-          "Ukraine",
-          "United Kingdom",
-          "Vatican City"
-        ]
-      }
+        "title": "DE-Country of Residence"
     },
-    "language_pair": {
-      "items": {
-        "enum": [
-          "DE - Dutch",
-          "DE - English (UK)",
-          "DE - French (FR)",
-          "DE - German (DE/AT)",
-          "DE - Italian",
-          "DE - Polish",
-          "DE - Portuguese (PT)",
-          "DE - Russian (RT/UKR)",
-          "DE - Spanish (ES)"
-        ]
-      }
+    "skillset": {
+        "items": {
+            "enum": [
+                "DE - Translate",
+                "DE - Bilingual Review Translations",
+                "DE - Post-Edit Machine Translations"
+            ]
+        },
+        "title": "DE-[Skillset] I can:"
+    },
+    "translate_from": {
+        "title": "DE-[Language Pair] I translate from:"
+    },
+    "translate_to": {
+        "title": "DE-[Language Pair] I translate to:"
+    },
+    "word_count": {
+        "title": "DE-How many words can you translate daily?",
+        "helper": "DE-This helps us understand your capacity when assigning you jobs."
+    },
+    "cat_tools": {
+        "title": "DE-CAT Tools"
+    },
+    "proz_profile_url": {
+        "title": "DE-Profile URL",
+        "helper": "DE-This helps us evaluate your experience and and prior feedback."
+    },
+    "additional_info": {
+        "title": "DE-Additional info"
+    },
+    "terms": {
+        "title": "DE-Partner Terms of Engagement"
+    },
+    "terms_accepted": {
+        "title": "DE-Partner Terms of Engagement",
+        "rightLabel": "DE-I accept the Partner Terms of Engagement"
+    },
+    "definitions": {
+        "cat_tools": {
+            "items": {
+                "enum": [
+                    "DE - SDL Trados Studio",
+                    "DE - MemoQ 8.x",
+                    "DE - Transit NXT ",
+                    "DE - Across 6"
+                ]
+            }
+        },
+        "country": {
+            "helper": "DE-This helps us comply with our clients' requirements and any local privacy legislations.",
+            "items": {
+                "enum": [
+                    "Albanien",
+                    "Andorra",
+                    "Österreich",
+                    "Weissrussland",
+                    "Belgien",
+                    "Bosnien and Herzegowina",
+                    "Bulgarien",
+                    "Kroatien",
+                    "Zypern",
+                    "Tscechien",
+                    "Dänemark",
+                    "Estland",
+                    "Finland",
+                    "Frankreich",
+                    "Georgien",
+                    "Deutschland",
+                    "Griechenland",
+                    "Ungarn",
+                    "Island",
+                    "Irland",
+                    "Italien",
+                    "Kosovo",
+                    "Lettland",
+                    "Liechtenstein",
+                    "Litauen",
+                    "Luxemburg",
+                    "Mazedonien",
+                    "Malta",
+                    "Moldau",
+                    "Monaco",
+                    "Montenegro",
+                    "Niederlande",
+                    "Norwegen",
+                    "Polen",
+                    "Portugal",
+                    "Rümanien",
+                    "Russland",
+                    "San Marino",
+                    "Serbien",
+                    "Slovakei",
+                    "Slovenien",
+                    "Spanien",
+                    "Schweden",
+                    "Schweiz",
+                    "Turkei",
+                    "Ukraine",
+                    "Vereinigtes Königreich",
+                    "Vatikanstadt"
+                ]
+            }
+        },
+        "language_pair": {
+            "items": {
+                "enum": [
+                    "DE - Dutch",
+                    "DE - English (UK)",
+                    "DE - French (FR)",
+                    "DE - German (DE/AT)",
+                    "DE - Italian",
+                    "DE - Polish",
+                    "DE - Portuguese (PT)",
+                    "DE - Russian (RT/UKR)",
+                    "DE - Spanish (ES)"
+                ]
+            }
+        }
     }
-  }
 }
