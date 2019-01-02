@@ -661,18 +661,13 @@
       }
 
       function initForm(schema, labels) {
-        const multiselect = {
-          type: "select",
-          multiple: true,
-          multiselect: {
-            maxHeight: 300
-          },
-          size: 5
-        };
-        const theselect = {
+        const singleSelect = {
           type: "select",
           multiple: false,
-          size: 3
+          size: 1,
+          multiselect: {
+            multiple: false
+          }
         };
         $("#form1").alpaca("destroy");
         $("#form1").html("");
@@ -706,7 +701,7 @@
                   type: "select",
                   data: "translate_from"
                 },
-                theselect
+                singleSelect
               ),
               translate_to: Object.assign(
                 {
@@ -727,17 +722,25 @@
                     }
                   }
                 },
-                theselect
+                singleSelect
               ),
-              country: {
+              country: Object.assign({
                 type: "select",
-                helper: labels.country.helper
-              },
+                helper: labels.country.helper,
+                singleSelect
+              }),
               word_count: {
                 type: "number",
                 helper: labels.word_count.helper
               },
-              cat_tools: Object.assign({}, multiselect),
+              cat_tools: {
+                type: "select",
+                multiselect: {
+                  multiple: true,
+                  maxHeight: 300
+                },
+                size: 5
+              },
               proz_profile_url: {
                 type: "url",
                 helper: labels.proz_profile_url.helper
@@ -808,9 +811,10 @@
         schema.definitions.cat_tools.items.enum =
           t.definitions.cat_tools.items.enum;
         props.proz_profile_url.title = t.proz_profile_url.title;
-        schema.definitions.country.items.enum =
-          t.definitions.country.items.enum;
-        schema.definitions.language_pair.items.enum =
+        schema.properties.country.enum = t.country.enum;
+        schema.properties.translate_from.enum =
+          t.definitions.language_pair.items.enum;
+        schema.properties.translate_to.enum =
           t.definitions.language_pair.items.enum;
         props.additional_info.title = t.additional_info.title;
         props.terms.title = t.terms.title;
