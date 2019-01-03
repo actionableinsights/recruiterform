@@ -1,141 +1,141 @@
 {
-  "main_title": "Bewerben Sie sich als Partner",
-  "main_intro": "Bevor Sie mit uns als Übersetzer oder Reviewer arbeiten, wir müssen mehr von Ihnen und ihr Kenntnisse erfahren.Füllen Sie bitte das folgende Formular. Vielen Dank!",
-  "submitted_title": "Vielen Dank für Ihre Bewerbung!",
-  "submitted_info": "Ihre Bewerbung haben wir erhalten. Wir werden bald in Kontakt mit Ihnen sein.",
-  "please_select_different_language": "Quell- und Zielsprache müssen verschieden sein",
-  "title": "Ihre Kenntnisse",
-  "first_name": {
-    "title": "Vorname"
-  },
-  "last_name": {
-    "title": "Nachname"
-  },
-  "mobile_phone_number": {
-    "title": "Whatsapp Telefonnummer",
-    "helper": "Bei dringenden Angelegenheiten"
-  },
+    "main_title": "Sich Bewerben als Partner",
+    "main_intro": "Bevor Sie mit uns als Übersetzer oder Reviewer arbeiten, wir müssen mehr von Ihnen und ihr Kenntnisse erfahren. Füllen Sie bitte das folgende Formular. Vielen Dank!",
+    "submitted_title": "Vielen Dank für Ihre Bewerbung!",
+    "submitted_info": "Ihre Bewerbung haben wir erhalten. Wir werden bald in Kontakt mit Ihnen sein.",
+    "please_select_different_language": "Quell- und Zielsprache müssen verschieden sein",
+    "title": "Ihre Kenntnisse",
+    "first_name": {
+        "title": "Vorname"
+    },
+    "last_name": {
+        "title": "Nachname"
+    },
+    "mobile_phone_number": {
+        "title": "Whatsapp Telefonnummer",
+        "helper": "Bei dringenden Angelegenheiten"
+    },
 
-  "email": {
-    "title": "DE-Email",
-    "helper": "DE-This allows us to email you about translation jobs that we may have available in your language pair"
-  },
-  "country": {
-    "title": "DE-Country of Residence",
-    "helper": "DE-This helps us comply with our clients' requirements and any local privacy legislations.",
-    "enum": [
-      "Albanien",
-      "Andorra",
-      "Österreich",
-      "Weissrussland",
-      "Belgien",
-      "Bosnien and Herzegowina",
-      "Bulgarien",
-      "Kroatien",
-      "Zypern",
-      "Tscechien",
-      "Dänemark",
-      "Estland",
-      "Finland",
-      "Frankreich",
-      "Georgien",
-      "Deutschland",
-      "Griechenland",
-      "Ungarn",
-      "Island",
-      "Irland",
-      "Italien",
-      "Kosovo",
-      "Lettland",
-      "Liechtenstein",
-      "Litauen",
-      "Luxemburg",
-      "Mazedonien",
-      "Malta",
-      "Moldau",
-      "Monaco",
-      "Montenegro",
-      "Niederlande",
-      "Norwegen",
-      "Polen",
-      "Portugal",
-      "Rümanien",
-      "Russland",
-      "San Marino",
-      "Serbien",
-      "Slovakei",
-      "Slovenien",
-      "Spanien",
-      "Schweden",
-      "Schweiz",
-      "Turkei",
-      "Ukraine",
-      "Vereinigtes Königreich",
-      "Vatikanstadt"
-    ]
-  },
-  "skillset": {
-    "items": {
-      "enum": [
-        "DE - Translate",
-        "DE - Bilingual Review Translations",
-        "DE - Post-Edit Machine Translations"
-      ]
+    "email": {
+        "title": "E-Mail",
+        "helper": "Angebote werden an diese E-Mail-Adresse geschickt sobald sie ankommen"
     },
-    "title": "DE-[Skillset] I can:"
-  },
-  "translate_from": {
-    "title": "DE-[Language Pair] I translate from:"
-  },
-  "translate_to": {
-    "title": "DE-[Language Pair] I translate to:"
-  },
-  "word_count": {
-    "title": "DE-How many words can you translate daily?",
-    "helper": "DE-This helps us understand your capacity when assigning you jobs."
-  },
-  "cat_tools": {
-    "title": "DE-CAT Tools"
-  },
-  "proz_profile_url": {
-    "title": "DE-Profile URL",
-    "helper": "DE-This helps us evaluate your experience and and prior feedback."
-  },
-  "additional_info": {
-    "title": "DE-Additional info"
-  },
-  "terms": {
-    "title": "DE-Partner Terms of Engagement"
-  },
-  "terms_accepted": {
-    "title": "DE-Partner Terms of Engagement",
-    "rightLabel": "DE-I accept the Partner Terms of Engagement"
-  },
-  "definitions": {
+    "country": {
+        "title": "Auftenthaltsland",
+        "helper": "This helps us comply with our clients' requirements and any local privacy legislations.",
+        "enum": [
+            "Albanien",
+            "Andorra",
+            "Österreich",
+            "Weissrussland",
+            "Belgien",
+            "Bosnien and Herzegowina",
+            "Bulgarien",
+            "Kroatien",
+            "Zypern",
+            "Tscechien",
+            "Dänemark",
+            "Estland",
+            "Finland",
+            "Frankreich",
+            "Georgien",
+            "Deutschland",
+            "Griechenland",
+            "Ungarn",
+            "Island",
+            "Irland",
+            "Italien",
+            "Kosovo",
+            "Lettland",
+            "Liechtenstein",
+            "Litauen",
+            "Luxemburg",
+            "Mazedonien",
+            "Malta",
+            "Moldau",
+            "Monaco",
+            "Montenegro",
+            "Niederlande",
+            "Norwegen",
+            "Polen",
+            "Portugal",
+            "Rümanien",
+            "Russland",
+            "San Marino",
+            "Serbien",
+            "Slovakei",
+            "Slovenien",
+            "Spanien",
+            "Schweden",
+            "Schweiz",
+            "Turkei",
+            "Ukraine",
+            "Vereinigtes Königreich",
+            "Vatikanstadt"
+        ]
+    },
+    "skillset": {
+        "items": {
+            "enum": [
+                "DE - Translate",
+                "DE - Bilingual Review Translations",
+                "DE - Post-Edit Machine Translations"
+            ]
+        },
+        "title": "DE-[Skillset] I can:"
+    },
+    "translate_from": {
+        "title": "Ich übersetzte aus:"
+    },
+    "translate_to": {
+        "title": "Ich übersetzte in:"
+    },
+    "word_count": {
+        "title": "Wieviel Wörter übersetzen Sie typischerweise jeden Tag?",
+        "helper": "DE-This helps us understand your capacity when assigning you jobs."
+    },
     "cat_tools": {
-      "items": {
-        "enum": [
-          "DE - SDL Trados Studio",
-          "DE - MemoQ 8.x",
-          "DE - Transit NXT ",
-          "DE - Across 6"
-        ]
-      }
+        "title": "CAT Werkzeuge"
     },
-    "language_pair": {
-      "items": {
-        "enum": [
-          "DE - Dutch",
-          "DE - English (UK)",
-          "DE - French (FR)",
-          "DE - German (DE/AT)",
-          "DE - Italian",
-          "DE - Polish",
-          "DE - Portuguese (PT)",
-          "DE - Russian (RT/UKR)",
-          "DE - Spanish (ES)"
-        ]
-      }
+    "proz_profile_url": {
+        "title": "Proz Profil URL",
+        "helper": "DE-This helps us evaluate your experience and and prior feedback."
+    },
+    "additional_info": {
+        "title": "Nebeninformation, z.B. andere Sprachrichtungen"
+    },
+    "terms": {
+        "title": "Partnervereinbarung"
+    },
+    "terms_accepted": {
+        "title": "Partnervereinbarung",
+        "rightLabel": "hiermit stimme ich der Partnervereinbarung zu"
+    },
+    "definitions": {
+        "cat_tools": {
+            "items": {
+                "enum": [
+                    "SDL Trados Studio",
+                    "MemoQ 8.x",
+                    "Transit NXT ",
+                    "Across 6"
+                ]
+            }
+        },
+        "language_pair": {
+            "items": {
+                "enum": [
+                    "Niederländisch (NL)",
+                    "Englisch (UK)",
+                    "Französisch (FR)",
+                    "Deutsch",
+                    "Italianisch",
+                    "Polnisch",
+                    "Portuguesisch (PT)",
+                    "Russisch",
+                    "Spanisch (ES)"
+                ]
+            }
+        }
     }
-  }
 }

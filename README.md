@@ -1,12 +1,13 @@
 # to do
 
-0. fields are multiselect when Residence and From/TO language single select
-1. Users can choose more than one From/To language pairs
-2. Display default data for word_count and whatsapp fields
-3. Rewrite terms and translate 
-4. Allow users to select language for interface and terms
+0. fields are multiselect when Residence and From/TO language single select DONE
+1. Users can choose more than one From/To language pairs Add comment in Additional fields Label added
+2. Display default data for word_count and whatsapp fields CHECK
+3. Rewrite terms and translate  ONGOING 
+4. Allow users to select language for interface and terms DONE
+5. Remaining Localization messages Alpana based 'Required' CSS?
 
-~~5. Language pair to and from must not be the same > uses validation~~
+~~6. Language pair to and from must not be the same > uses validation~~
 
 
 # Simple Form
@@ -61,3 +62,6 @@ App can be deployed to Heroku without additional configuration. Make sure you ha
 This tutorial describes how to set up BitBucket Pipelines to push to Heroku: https://confluence.atlassian.com/bitbucket/deploy-to-heroku-872013667.html
 
 Other CI/build tools can be setup similarly
+
+### Github to Heroku
+

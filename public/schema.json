@@ -141,11 +141,10 @@
         "word_count": {
             "type": "number",
             "title": "How many words can you translate daily?",
-            "options": {
-                "minimum": 1000,
-                "maximum": 5000,
-                "divisibleBy": 1000
-            }
+            "minimum": 1000,
+            "maximum": 5000,
+            "divisibleBy": 1000
+
         },
         "cat_tools": {
             "title": "CAT Tools",

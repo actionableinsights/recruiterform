@@ -249,10 +249,20 @@
             $("#form1").alpaca({
                 schema: schema,
                 view: {
-                    locale: getLocale()
+                    locale: getLocale(),
+                    messages: {
+                        "de_DE": {
+                            "notOptional": "Pflichtfeld"
+                        },
+                        "ru_RU": {
+                            "notOptional": "RU-Mandatory"
+                        }
+                    }
                 },
                 data: {
-                    terms: $(".terms.en").html()
+                    terms: $(".terms.en").html(),
+                    word_count: 2000,
+
                 },
                 options: {
                     fields: {
@@ -417,6 +427,8 @@
             switch ($("#lang").val()) {
                 case "de":
                     return "de_DE";
+                case "ru":
+                    return "ru_RU";
                 default:
                     return "en_US";
             }
